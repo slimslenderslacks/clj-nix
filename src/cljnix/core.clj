@@ -244,7 +244,8 @@
        (tools/prep options)
 
        (let [basis (deps/create-basis options)
-             mvn-deps (maven-deps basis)
+             mvn-deps (binding [utils/*mvn-repos* (merge mvn/standard-repos (:mvn/repos (read-string (slurp deps-path))))]
+                        (maven-deps basis))
              git-deps (git-deps basis)
              _ (make-cache! {:mvn-deps mvn-deps
                              :git-deps git-deps
