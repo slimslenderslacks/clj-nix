@@ -18,7 +18,6 @@
     [clojure.tools.deps.util.dir :as tools-deps.dir]
     [clojure.tools.deps.util.io :refer [printerrln]]))
 
-
 (def LOCK-VERSION 3)
 
 (def add-to-nix-store?

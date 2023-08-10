@@ -1,6 +1,6 @@
 [
   {
-    "url": "https://github.com/clojure/tools.build.git",
+    "url": "https://github.com/clojure/tools.build",
     "rev": "76b78fe20355c3570ce5477bc80c39c79e097af2",
     "paths": [
       "src/main/clojure",

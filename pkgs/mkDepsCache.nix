@@ -43,8 +43,8 @@ let
     { lib, url, rev, hash, ... }:
     {
       name = "${lib}/${rev}";
-      path = fetchgit {
-        inherit url rev hash;
+      path = builtins.fetchGit {
+        inherit url rev;
       };
     };
 
